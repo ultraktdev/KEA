@@ -2,13 +2,11 @@
 <html lang="en">
 
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
-  <title>Karina Swarnaputri</title>
+  <title>Tea Time</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -22,17 +20,15 @@
 
   <!--  jQuery -->
   <script src="js/jquery-3.3.1.min.js"></script>
-
 </head>
 
 <body>
-
   <h1 class="site-heading text-center text-white d-none d-lg-block">
       <span class="site-heading-upper text-primary mb-3">A soothing moment for you</span>
       <span class="site-heading-lower">Tea Time</span>
     </h1>
 
-  <!-- Navigation -->
+  <!-- NAVIGATION -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
       <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">TEA TIME</a>
@@ -90,8 +86,8 @@
   </section>
 
   <!-- ORDER -->
-    <section class="page-section cta2">
-      <form id="order">
+  <section class="page-section cta2">
+    <form id="order">
 
       <div class="cardWrapper">
         <div class="row">
@@ -136,7 +132,8 @@
                     <h1 class="card-title pricing-card-title">50 K <small>/ can</small>
                       </h1>
                     <p class="textProduk">Different styles of oolong tea can vary widely in flavor. They can be sweet and fruity with honey aromas, or woody and thick with roasted aromas, or green and fresh with complex aromas, all depending on the horticulture and style of
-                      production.</p>
+                      production.
+                    </p>
                   </div>
                   <div class="card-footer">
                     <div class="form-group mb-0">
@@ -175,16 +172,17 @@
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
         </div>
       </div>
       <div class="container mt-3">
-        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Pesan">
+        <input type="submit" class="btn btn-primary btn-lg btn-block" value="Process Order">
       </div>
     </form>
-    </section>
+  </section>
 
   <footer class="footer text-center py-5">
     <div class="container">
@@ -207,8 +205,15 @@
 
         var total = (produk1 * 75000) + (produk2 * 50000) + (produk3 * 60000);
 
+        //  Thousands Separator
+        const thousandSeparator = (x) => {
+          return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+        }
+        total = thousandSeparator(total);
+
         // Message WA
-        var urlencodedtext = encodeURIComponent("Halo *TEA TIME*, pesanan saya adalah sebagai berikut: \n \n" + "English Breakfast: " + "*" + produk1 + "*" + " kaleng \n" + "Oolong: " + "*" + produk2 + "*" + " kaleng \n" + "Jasmine: " + "*" + produk3 + "*" + " kaleng \n \n" + "Total Rp. " + total + ",-")
+        var urlencodedtext = encodeURIComponent("Halo *TEA TIME*, pesanan saya adalah sebagai berikut: \n \n" + "English Breakfast: " + "*" + produk1 + "*" + " kaleng \n" + "Oolong: " + "*" + produk2 + "*" + " kaleng \n" + "Jasmine: " + "*" +
+          produk3 + "*" + " kaleng \n \n" + "Total Rp. " + total + ",-")
 
         // Kirim WA
         var whatsappphonenumber = 628557828466; // Karina Swarnaputri
