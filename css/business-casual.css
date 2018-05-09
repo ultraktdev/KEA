@@ -310,3 +310,12 @@ small {
   margin-left: 15px;
   margin-right: 15px;
 }
+
+.tombolPesan {
+  margin: 20px;
+}
+
+.namaBrand {
+  font-family: Pacifico;
+  letter-spacing: 1px;
+}
