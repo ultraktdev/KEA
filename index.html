@@ -186,7 +186,7 @@
 
   <footer class="footer text-center py-5">
     <div class="container">
-      <p class="m-0 small">Copyright &copy; 2018 Karina Swarnaputri</p>
+      <a class="whatsapp m-0 small contactKarin" href="">Copyright &copy; 2018 Karina Swarnaputri</a>
     </div>
   </footer>
 
@@ -220,6 +220,17 @@
         var whatsapp_url = "https://api.whatsapp.com/send?phone=" + whatsappphonenumber + "&text=" + urlencodedtext;
         window.open(whatsapp_url, '_blank');
       });
+
+      $('.whatsapp').on("click", function (x) {
+        x.preventDefault();
+        // Message WA
+        var urlencodedtext = encodeURIComponent("Halo Karin, saya ingin informasi lebih lanjut mengenai ...");
+        // Kirim WA
+        var whatsappphonenumber = 628557828466; // Jeffry Hermanto
+        var whatsapp_url = "https://api.whatsapp.com/send?phone=" + whatsappphonenumber + "&text=" + urlencodedtext;
+        window.open(whatsapp_url, '_blank');
+      });
+
     });
   </script>
 
