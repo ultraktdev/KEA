@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <title>Tea Time</title>
+  <title>KEA</title>
 
   <!-- Bootstrap core CSS -->
   <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -23,24 +23,24 @@
 </head>
 
 <body>
-  <h1 class="site-heading text-center text-white d-none d-lg-block">
-      <span class="site-heading-upper text-primary mb-3">A soothing moment for you</span>
-      <span class="site-heading-lower">Tea Time</span>
-    </h1>
+  <h1 class="site-heading text-center text-white d-none d-lg-block kepala">
+    <!-- <span class="site-heading-upper text-primary mb-3">A soothing moment for you</span> -->
+    <!-- <span class="site-heading-lower">Tea Time</span> -->
+    <img src="./img/keaWhite.png" height="240px"/>
+  </h1>
 
   <!-- NAVIGATION -->
   <nav class="navbar navbar-expand-lg navbar-dark py-lg-4" id="mainNav">
     <div class="container">
-      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">TEA TIME</a>
+      <a class="navbar-brand text-uppercase text-expanded font-weight-bold d-lg-none" href="#">KEA</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item px-lg-4">
-            <a class="nav-link text-uppercase text-expanded" href="index.html">Logo
-                <span class="sr-only">(current)</span>
-              </a>
+            <h6 class="mb-0">Upgrade your moment of indulgence with a sip of KEA tea</h6>
+            <!-- <img src="./img/keaWhite.png" height="150" /> -->
           </li>
         </ul>
       </div>
@@ -101,11 +101,11 @@
 
                 <div class="card mb-4 box-shadow">
                   <div class="card-header">
-                    <h4 class="my-0 font-weight-normal"><span class="produk">English Breakfast</span></h4>
+                    <h4 class="my-0 font-weight-normal"><span class="produk">Straits Chai</span></h4>
                   </div>
                   <div class="card-body">
                     <img src="img/tea1.jpg" width="100%">
-                    <h1 class="card-title pricing-card-title">75 K <small>/ can</small>
+                    <h1 class="card-title pricing-card-title">150 K <small>/ can</small>
                       </h1>
                     <p class="textProduk">English breakfast tea is a black tea blend usually described as full-bodied, robust, rich and blended to go well with milk and sugar, in a style traditionally associated with a hearty English breakfast.</p>
                   </div>
@@ -125,11 +125,11 @@
 
                 <div class="card mb-4 box-shadow">
                   <div class="card-header">
-                    <h4 class="my-0 font-weight-normal"><span class="produk">Oolong</span></h4>
+                    <h4 class="my-0 font-weight-normal"><span class="produk">Rose Tea</span></h4>
                   </div>
                   <div class="card-body">
                     <img src="img/tea2.jpg" width="100%">
-                    <h1 class="card-title pricing-card-title">50 K <small>/ can</small>
+                    <h1 class="card-title pricing-card-title">125 K <small>/ can</small>
                       </h1>
                     <p class="textProduk">Different styles of oolong tea can vary widely in flavor. They can be sweet and fruity with honey aromas, or woody and thick with roasted aromas, or green and fresh with complex aromas, all depending on the horticulture and style of
                       production.
@@ -151,11 +151,11 @@
 
                 <div class="card mb-4 box-shadow">
                   <div class="card-header">
-                    <h4 class="my-0 font-weight-normal"><span class="produk">Jasmine</span></h4>
+                    <h4 class="my-0 font-weight-normal"><span class="produk">Earl Gray</span></h4>
                   </div>
                   <div class="card-body">
                     <img src="img/tea3.jpg" width="100%">
-                    <h1 class="card-title pricing-card-title">60 K <small>/ can</small>
+                    <h1 class="card-title pricing-card-title">100 K <small>/ can</small>
                       </h1>
                     <p class="textProduk">Typically, jasmine tea has green tea as the tea base; however, white tea and black tea are also used. The resulting flavour of jasmine tea is subtly sweet and highly fragrant.</p>
                   </div>
@@ -178,7 +178,7 @@
           </div>
         </div>
       </div>
-      <div class="container mt-3">
+      <div class="container mt-3 tombolKonfirm">
         <input type="submit" class="btn btn-primary btn-lg btn-block" value="Confirm Order">
       </div>
     </form>
@@ -203,7 +203,7 @@
         var produk2 = $('#produk2').val();
         var produk3 = $('#produk3').val();
 
-        var total = (produk1 * 75000) + (produk2 * 50000) + (produk3 * 60000);
+        var total = (produk1 * 150000) + (produk2 * 125000) + (produk3 * 100000);
 
         //  Thousands Separator
         const thousandSeparator = (x) => {
@@ -212,7 +212,7 @@
         total = thousandSeparator(total);
 
         // Message WA
-        var urlencodedtext = encodeURIComponent("Halo *TEA TIME*, pesanan saya adalah sebagai berikut: \n \n" + "English Breakfast: " + "*" + produk1 + "*" + " kaleng \n" + "Oolong: " + "*" + produk2 + "*" + " kaleng \n" + "Jasmine: " + "*" +
+        var urlencodedtext = encodeURIComponent("Halo *KEA*, pesanan saya adalah sebagai berikut: \n \n" + "English Breakfast: " + "*" + produk1 + "*" + " kaleng \n" + "Oolong: " + "*" + produk2 + "*" + " kaleng \n" + "Jasmine: " + "*" +
           produk3 + "*" + " kaleng \n \n" + "Total Rp. " + total + ",-")
 
         // Kirim WA
@@ -226,7 +226,7 @@
         // Message WA
         var urlencodedtext = encodeURIComponent("Halo Karin, saya ingin informasi lebih lanjut mengenai ...");
         // Kirim WA
-        var whatsappphonenumber = 628557828466; // Jeffry Hermanto
+        var whatsappphonenumber = 628557828466; // Karina Swarnaputri
         var whatsapp_url = "https://api.whatsapp.com/send?phone=" + whatsappphonenumber + "&text=" + urlencodedtext;
         window.open(whatsapp_url, '_blank');
       });

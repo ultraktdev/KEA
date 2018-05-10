@@ -327,3 +327,12 @@ small {
 .contactKarin {
   color: #f2f2f2
 }
+
+.kepala {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.tombolKonfirm {
+  width: 1024px;
+}
