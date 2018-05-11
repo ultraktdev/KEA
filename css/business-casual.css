@@ -3,20 +3,16 @@
  * Copyright 2013-2018 Start Bootstrap
  * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-business-casual/blob/master/LICENSE)
  */
+
 body {
   font-family: 'Lora';
-  background: linear-gradient(rgba(100, 100, 100, 0.65), rgba(100, 100, 100, 0.65)), url("../img/bg.jpg");
+  background: linear-gradient(rgba(255, 255, 255, 0.9), rgba(100, 100, 100, 0.65)), url("../img/bg.jpg");
   background-attachment: fixed;
   background-position: center;
   background-size: cover;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: 'Raleway';
 }
 
@@ -292,6 +288,7 @@ a:hover {
 
 .card-footer {
   background-color: #;
+  border-top: none;
 }
 
 .produk {
@@ -312,7 +309,7 @@ small {
 }
 
 .tombolPesan {
-  margin: 20px;
+  width: 75%;
 }
 
 .namaBrand {
@@ -335,4 +332,9 @@ small {
 
 .tombolKonfirm {
   width: 1024px;
+}
+
+.keterangan {
+  font-size: 10px;
+  margin-top: -20px;
 }
