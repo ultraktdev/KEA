@@ -338,3 +338,8 @@ small {
   font-size: 10px;
   margin-top: -20px;
 }
+
+.slogan {
+  font-family: 'Satisfy', cursive;
+  font-size: 24px;
+}
